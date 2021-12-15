@@ -1,6 +1,6 @@
 # React HID
 
-High order component for capturing entries from HID devices.<br/>
+React hooks for capturing entries from HID devices.<br/>
 
 ## Install
 
@@ -16,22 +16,22 @@ then import the package in your app : <br />
 
 ## Usage
 
-_retrieve all key stroke before Enter key_<br/>
+_retrieve all key strokes before an action key is pressed_<br/>
 
-    <HidHoc
-        onScanSuccess={(input) => {
-          console.log(input);
-        }}
-      >
-      <App />
-    </HidHoc>
+    import { useHidWithActionKey } from 'react-hid';
 
-_retrieve all key stroke real time_<br/>
+    const handleKeys = (keys: string) => {
+      console.log(keys);
+    };
 
-    <HidHoc
-        onKeyDetect={(key) => {
-          console.log(key);
-        }}
-      >
-      <App />
-    </HidHoc>
+    useHidWithActionKey('Enter', handleKeys);
+
+_retrieve all key strokes real time_<br/>
+
+    import { useHid } from 'react-hid';
+
+    const handleKey = (key: string) => {
+      console.log(key);
+    };
+
+    useHid(handleKey);

@@ -2,13 +2,13 @@ import { useEffect } from 'react';
 
 export default function useEvent(
   event: keyof DocumentEventMap,
-  handler: any,
+  eventListener: EventListener,
   passive = false,
 ): void {
   useEffect(() => {
-    document.addEventListener(event, handler, passive);
+    document.addEventListener(event, eventListener, passive);
     return function cleanup() {
-      document.removeEventListener(event, handler);
+      document.removeEventListener(event, eventListener);
     };
   });
 }

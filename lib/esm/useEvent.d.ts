@@ -1,1 +1,1 @@
-export default function useEvent(event: keyof DocumentEventMap, handler: any, passive?: boolean): void;
+export default function useEvent(event: keyof DocumentEventMap, eventListener: EventListener, passive?: boolean): void;
