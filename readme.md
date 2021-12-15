@@ -22,7 +22,7 @@ Retrieve all key strokes before an action key is pressed<br/>
 
     useHidWithActionKey('Enter', handleKeys);
 
-Retrieve all key strokes real time\_<br/>
+Retrieve all key strokes real time<br/>
 
     import { useHid } from 'react-hid';
 
