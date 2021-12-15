@@ -1,12 +1,14 @@
 {
   "name": "react-hid",
-  "version": "0.1.0",
-  "description": "High order component for capturing entries from HID devices.",
+  "version": "0.1.1",
+  "description": "React hooks for capturing entries from HID devices.",
   "keywords": [
     "hid",
     "scanner",
     "keyboard",
-    "react"
+    "react",
+    "barcode",
+    "qrcode"
   ],
   "repository": {
     "type": "git",
