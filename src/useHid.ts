@@ -14,6 +14,7 @@ export function useHidWithActionKey(key: string, handler: Handler): void {
   const handleKeyReceived = (keyboardEvent: KeyboardEvent) => {
     if (keyboardEvent.key === key) {
       handler(tempKeys);
+      setTempKeys("")
     } else {
       setTempKeys(`${tempKeys}${keyboardEvent.key}`);
     }
