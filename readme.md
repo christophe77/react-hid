@@ -10,13 +10,9 @@ or <br />
 
     npm install --save react-hid
 
-then import the package in your app : <br />
-
-    import HidHoc from 'react-hid';
-
 ## Usage
 
-_retrieve all key strokes before an action key is pressed_<br/>
+Retrieve all key strokes before an action key is pressed<br/>
 
     import { useHidWithActionKey } from 'react-hid';
 
@@ -26,7 +22,7 @@ _retrieve all key strokes before an action key is pressed_<br/>
 
     useHidWithActionKey('Enter', handleKeys);
 
-_retrieve all key strokes real time_<br/>
+Retrieve all key strokes real time\_<br/>
 
     import { useHid } from 'react-hid';
 
