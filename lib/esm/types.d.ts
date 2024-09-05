@@ -1,1 +1,1 @@
-export declare type Handler = (key: string) => void;
+export type Handler = (key: string) => void;
